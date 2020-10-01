@@ -1,14 +1,79 @@
 * {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-html, {
+html {
     height: 100%;
 }
 
 body {
-    background-color: rgb(250, 36, 107);
+    background-color: #ffffff;
+    font-family:'Montserrat', sans-serif;
+    height: 100%;
+}
+
+main {
     display: flex;
-    justify-content: center;
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+    margin-top: 10em;
+    background-color: #dddddd;
+    border-radius: 20px;
+}
+
+.box {
+    width: 50%;
+    padding: 5em 3em;
+}
+
+.box-left {
+    background-image: url(images/esteban-severino-dLYn6K1RHHQ-unsplash.jpg);
+    opacity: 0.5;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-bottom-left-radius: inherit;
+    border-top-left-radius: inherit;
+    position: relative;
+    background-image: cross-fade();
+}
+
+.textbox{
+    position: absolute;  
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+}
+
+.header{
+    margin-bottom: 2em;
+}
+
+.row{
+    margin-bottom:1em;
+    display: flex;
+    flex-direction: row;
+}
+
+.row-gen{
+
+}
+
+h1{
+    font-weight: 900;
+    font-size: 5rem;
+}
+
+h2{
+font-weight: 600;
+font-size: 2rem;
+}
+
+h3{
+    font
 }

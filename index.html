@@ -6,19 +6,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <meta name="description" content="Här beskriver jag min sida">
-    <script src="https://kit.fontawesome.com/310528ea6d.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
     <title>Registration form</title>
 </head>
-<body>
-<div class="registration form">
-    <div>
-        <h1>Register</h1>
-    </div>
 
-</div> 
+<body>
+    <main>
+        <div class="box box-left">
+            <div class="textbox">
+                <h1>PLANTS</h1>
+                <h2>Helps you to take care of your plants</h2>
+            </div>
+        </div>
+        <div class="box box-rigth">
+            <div class="registration-form">
+                <div class="header">
+                    <h2>Become a member</h2>
+                </div>
+                <form action="">
+                    <div class="row">
+                        <label for="fname">First name</label>
+                        <input type="text" id="fname" name="fname">
+                    </div>
+                    <div class="row">
+                        <label for="lname">Last name</label>
+                        <input type="text" id="lname" name="lname">
+                    </div>
+                    <div class="row row-gen">
+                        <label for="gender">Gender</label>
+                        <div class="radio">
+                            <label for="male">Male</label>
+                            <input type="radio" name="gender" id="male" value="male">
+                        </div>
+                        <div class="radio">
+                            <label for="female">Female</label>
+                            <input type="radio" name="gender" id="female" value="female">
+                        </div>
+
+                        <div class="radio">
+                            <label for="other">Other</label>
+                            <input type="radio" name="gender" id="other" value="other">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="row">
+                        <label for="phone">Phone</label>
+                        <input type="tel" name="phone" id="phone">
+                    </div>
+                    <div class="row">
+                        <label for="dateOfBirth">Date of Birth </label>
+                        <input type="date" name="dateOfBirth" id="dateOfBirth">
+                    </div>
+                    <div class="row">
+                        <label for="city">City</label>
+                        <input type="text" name="city" id="city">
+                    </div>
+                    <div class="row">
+                        <label for="region">Region</label>
+                        <select name="region" id="region">
+                            <option value="Asia">Asia Pacific</option>
+                            <option value="America">Central & South America</option>
+                            <option value="Europe">Europe</option>
+                            <option value="Africa">Middle East & Africa</option>
+                            <option value="North america">North America</option>
+                        </select>
+                    </div>
+                    <div class="checkboxes">
+                        <div>
+                            <input type="checkbox" name="terms" id="terms" required>
+                            <!--Required. måste kryssas i för att skicka iväg formuläret-->
+                            <label for="terms">I have read and agreed to the terms and conditions</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="news" id="news" checked>
+                            <!--I kryssad som default-->
+                            <label for="news">I would like to subscribe to the newsletter</label>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="btn btn-submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </main>
+
 
 
 
 
 </body>
+
 </html>
