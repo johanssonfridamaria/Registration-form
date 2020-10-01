@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+}
+
+html, {
+    height: 100%;
+}
+
+body {
+    background-color: rgb(250, 36, 107);
+    display: flex;
+    justify-content: center;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
