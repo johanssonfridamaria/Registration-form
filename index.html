@@ -12,94 +12,84 @@
 </head>
 
 <body>
-    <main>
-        <div class="box box-left">
-            <div class="textbox">
-                <h1>PLANTS</h1>
-                <h2>Helps you to take care of your plants</h2>
-            </div>
-        </div>
-        <div class="box box-rigth">
-            <div class="registration-form">
-                <div class="header">
-                    <h2>Become a member</h2>
+    <section class="main">
+        <div class="box header">
+                <div class="header-text">
+                    <h1>Become a member</h1>
                 </div>
-                <form action="">
-                    <div class="row">
-                        <label for="fname">First name</label>
-                        <input type="text" id="fname" name="fname">
-                    </div>
-                    <div class="row">
-                        <label for="lname">Last name</label>
-                        <input type="text" id="lname" name="lname">
-                    </div>
-                    <div class="row row-gen">
-                        <label for="gender">Gender</label>
-                        <div class="radio">
-                            <label for="male">Male</label>
-                            <input type="radio" name="gender" id="male" value="male">
-                        </div>
-                        <div class="radio">
-                            <label for="female">Female</label>
-                            <input type="radio" name="gender" id="female" value="female">
-                        </div>
-
-                        <div class="radio">
-                            <label for="other">Other</label>
-                            <input type="radio" name="gender" id="other" value="other">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email">
-                    </div>
-                    <div class="row">
-                        <label for="phone">Phone</label>
-                        <input type="tel" name="phone" id="phone">
-                    </div>
-                    <div class="row">
-                        <label for="dateOfBirth">Date of Birth </label>
-                        <input type="date" name="dateOfBirth" id="dateOfBirth">
-                    </div>
-                    <div class="row">
-                        <label for="city">City</label>
-                        <input type="text" name="city" id="city">
-                    </div>
-                    <div class="row">
-                        <label for="region">Region</label>
-                        <select name="region" id="region">
-                            <option value="Asia">Asia Pacific</option>
-                            <option value="America">Central & South America</option>
-                            <option value="Europe">Europe</option>
-                            <option value="Africa">Middle East & Africa</option>
-                            <option value="North america">North America</option>
-                        </select>
-                    </div>
-                    <div class="checkboxes">
-                        <div>
-                            <input type="checkbox" name="terms" id="terms" required>
-                            <!--Required. måste kryssas i för att skicka iväg formuläret-->
-                            <label for="terms">I have read and agreed to the terms and conditions</label>
-                        </div>
-                        <div>
-                            <input type="checkbox" name="news" id="news" checked>
-                            <!--I kryssad som default-->
-                            <label for="news">I would like to subscribe to the newsletter</label>
-                        </div>
-                    </div>
-                    <div>
-                        <button class="btn btn-submit">Submit</button>
-                    </div>
-                </form>
-            </div>
         </div>
-
-    </main>
-
-
-
-
-
+        <div class="box content">
+                <div class="registration-form">
+                    <form action="">
+                        <div class="row">
+                            <label for="fname">First name:</label>
+                            <input type="text" id="fname" name="fname">
+                        </div>
+                        <div class="row">
+                            <label for="lname">Last name:</label>
+                            <input type="text" id="lname" name="lname">
+                        </div>
+                        <div class="row">
+                            <label for="gender">Gender:</label>
+                           <div class="row-gen">
+                            <div class="gen">
+                                <input type="radio" name="gender" id="male" value="male">
+                                <label for="male">Male</label>
+                            </div>
+                            <div class="gen">
+                                <input type="radio" name="gender" id="female" value="female">
+                                <label for="female">Female</label>
+                            </div>
+                            <div class="gen">
+                                <input type="radio" name="gender" id="other" value="other">
+                                <label for="other">Other</label>
+                            </div>
+                           </div>
+                        </div>
+                        <div class="row">
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div class="row">
+                            <label for="phone">Phone:</label>
+                            <input type="tel" name="phone" id="phone">
+                        </div>
+                        <div class="row">
+                            <label for="dateOfBirth">Date of Birth: </label>
+                            <input type="date" name="dateOfBirth" id="dateOfBirth">
+                        </div>
+                        <div class="row">
+                            <label for="city">City:</label>
+                            <input type="text" name="city" id="city">
+                        </div>
+                        <div class="row">
+                            <label for="region">Region</label>
+                            <select name="region" id="region">
+                                <option value="select">Select</option>
+                                <option value="Asia">Asia Pacific</option>
+                                <option value="America">Central & South America</option>
+                                <option value="Europe">Europe</option>
+                                <option value="Africa">Middle East & Africa</option>
+                                <option value="North america">North America</option>
+                            </select>
+                        </div>
+                        <div class="checkboxes">
+                            <div class="check">
+                                <input type="checkbox" name="terms" id="terms" required>
+                                <label for="terms">I have read and agreed to the terms and conditions</label>
+                            </div>
+                            <div class="check" >
+                                <input type="checkbox" name="news" id="news" checked>
+                                <label for="news">I would like to subscribe to the newsletter</label>
+                            </div>
+                        </div>
+                        <div>
+                            <button class="btn-submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+        </div>
+    </section>
 </body>
 
 </html>

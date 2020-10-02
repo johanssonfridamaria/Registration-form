@@ -9,71 +9,122 @@ html {
 }
 
 body {
-    background-color: #ffffff;
-    font-family:'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100%;
 }
 
-main {
+.main {
+    width: 20rem;
     display: flex;
-    flex-direction: row;
-    width: 80%;
-    margin: auto;
-    margin-top: 10em;
-    background-color: #dddddd;
-    border-radius: 20px;
+    flex-direction: column;
+    height: 100%;
 }
 
 .box {
-    width: 50%;
-    padding: 5em 3em;
+    display: flex;
+    justify-content: center;
+    padding: 2em 3em;
 }
 
-.box-left {
+.header {
     background-image: url(images/esteban-severino-dLYn6K1RHHQ-unsplash.jpg);
-    opacity: 0.5;
-    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/esteban-severino-dLYn6K1RHHQ-unsplash.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    border-bottom-left-radius: inherit;
-    border-top-left-radius: inherit;
-    position: relative;
-    background-image: cross-fade();
+    background-size: cover;
+    height: 20vh;
 }
 
-.textbox{
-    position: absolute;  
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.header-text {
+    text-align: left;
     color: #fff;
-    text-align: center;
+    display: flex;
+    align-items: flex-end;
 }
 
-.header{
+.content {
+    background-color: rgb(243, 243, 243);
+    display: flex;
+    justify-content: center;
+}
+
+.row {
+    margin-bottom: 1.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+.row label {
+    font-size: 1em;
+    margin-bottom: 0.5em;
+}
+
+.row input {
+    border: none;
+    border-bottom: 0.1rem solid black;
+    width: 100%;
+    outline: none;
+    background-color: transparent;
+    padding: 0.5em 0.5em;
+}
+
+.check{
+    margin-bottom: 1em;
+}
+
+
+input[type=radio]{
+cursor: pointer;
+width: fit-content;
+}
+
+.gen label{
+    font-size: 0.7em;
+}
+
+.region select{
+    border: none;
+    width: 100%;
+    outline: none;
+    background-color: transparent;
+    padding: 0.5em 0.5em;
+}
+
+.checkboxes {
     margin-bottom: 2em;
 }
 
-.row{
-    margin-bottom:1em;
-    display: flex;
+.btn-submit {
+    background-color: #325e33;
+    width: 100%;
+    border: none;
+    color: #fff;
+    padding: 1em 2em;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+@media(min-width: 768px){
+.main{
+    width:50rem;
+}
+
+.row {
+    display:flex;
     flex-direction: row;
 }
 
-.row-gen{
-
+.row label{
+    margin-bottom: 0;
+    margin-right:2em ;
+    width: 30%;
 }
-
-h1{
-    font-weight: 900;
-    font-size: 5rem;
-}
-
-h2{
-font-weight: 600;
-font-size: 2rem;
-}
-
-h3{
-    font
 }
