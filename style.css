@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-html {
+html, body {
     height: 100%;
 }
 
@@ -13,14 +13,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
 }
 
 .main {
     width: 20rem;
     display: flex;
     flex-direction: column;
-    height: 100%;
 }
 
 .box {
@@ -35,7 +33,6 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 20vh;
 }
 
 .header-text {
@@ -71,21 +68,20 @@ body {
     padding: 0.5em 0.5em;
 }
 
-.check{
-    margin-bottom: 1em;
+.check {
+    margin-bottom: 0.5em;
 }
 
-
-input[type=radio]{
-cursor: pointer;
-width: fit-content;
+input[type=radio] {
+    cursor: pointer;
+    width: fit-content;
 }
 
-.gen label{
+.gen label {
     font-size: 0.7em;
 }
 
-.region select{
+.region select {
     border: none;
     width: 100%;
     outline: none;
@@ -112,19 +108,20 @@ h1 {
     font-size: 2rem;
 }
 
-@media(min-width: 768px){
-.main{
-    width:50rem;
-}
-
-.row {
-    display:flex;
-    flex-direction: row;
-}
-
-.row label{
-    margin-bottom: 0;
-    margin-right:2em ;
-    width: 30%;
-}
+@media(min-width: 768px) {
+    .main {
+        width: 50rem;
+    }
+    .row {
+        display: flex;
+        flex-direction: row;
+    }
+    .row label {
+        margin-bottom: 0;
+        margin-right: 2em;
+        width: 30%;
+    }
+    .flex label {
+        margin-right: 0;
+    }
 }
