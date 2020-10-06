@@ -4,15 +4,15 @@
     box-sizing: border-box;
 }
 
-html, body {
+html {
     height: 100%;
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
     display: flex;
-    align-items: center;
     justify-content: center;
+    height: 100vh;
 }
 
 .main {
@@ -24,7 +24,7 @@ body {
 .box {
     display: flex;
     justify-content: center;
-    padding: 2em 3em;
+    padding: 1em 2em;
 }
 
 .header {
@@ -33,6 +33,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    height: 20vh;
 }
 
 .header-text {
@@ -123,5 +124,9 @@ h1 {
     }
     .flex label {
         margin-right: 0;
+    }
+
+    .body{
+        align-items: center;
     }
 }
